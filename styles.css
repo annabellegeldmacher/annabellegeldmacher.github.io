@@ -1,103 +1,101 @@
-/* ----------HEADER---------- */
-@font-face {
-    font-family: 'TaylorSwiftHandwriting';
-    src: url('fonts/TaylorSwiftHandwriting.ttf');
-}
-
-@font-face {
-    font-family: 'BuiltTitling';
-    src: url('fonts/BuiltTitling.ttf')
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    background-color: #1F4D3F;
-    color: #F7EEE9;
-    /* border-bottom: 5px solid #D9A5A8; */
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    font-family: 'BuiltTitling';
-    padding: 1rem;
-}
-
-/* ----------MAIN---------- */
-
+html,
 body {
-    background-color: #EBCFCF;
-    color: #1F4D3F;
     margin: 0;
     padding: 0;
-    font-family: 'TaylorSwiftHandwriting';
 }
 
-.profilepic {
-    max-width: 35%;
-    padding: 2rem 1rem;
-    border-radius: 40%;
+.header {
+    background-image: url(photos/highlandsunset.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+
+    /* list-style-type: none;
+    color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0; */
 }
 
-.centered {
+.nav ul {
+    display: flex;
+    color: blue;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1.5rem;
+    list-style: none;
+    padding: .5rem 1rem;
+    margin: 0;
+    gap: 1rem;
+}
+
+.hero-text {
+    font-size: clamp(3rem, 18vw, 20rem);
+    color: pink;
+    margin: auto;
+    text-align: center;
+    max-width: 90%;
+    max-height: 95%;
+    padding: 0 1rem;
+    overflow-wrap: break-word;
+    line-height: 1:1;
+}
+
+.contact {
+    color: pink;
+}
+
+.contact:hover {
+    color: green;
+
+}
+
+.blob-container {
+    background-color: #ff59a4;
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    /* Irregular blob radii */
+    padding: 2rem;
+    display: inline-block;
     text-align: center;
 }
 
-/* .intro {
-    max-width: 500px;
-    text-align: left;
-} */
-/* ----------WAVES---------- */
-.wave-divider {
-    background-color: var(--above);
-    /* color of the section above */
-    line-height: 0;
+.body {
+    background-color: pink;
 }
 
-.wave-divider svg {
-    display: block;
-    width: 100%;
-    height: 120px;
-    /* make the waves taller or shorter */
-    fill: var(--below);
-    /* color of the section below */
+.footer {
+    background-image: url(photos/wave1.svg);
+    background-color: red;
+    width: 100% 100%;
+    background-repeat: no-repeat;
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-/* ----------SECTIONS---------- */
-section {
-    padding: 2rem 1.5rem;
+.footer-text {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    text-align: center;
+    letter-spacing: 1vw;
+    /* puts text in front of blob */
+    /* height: 100%; */
+    margin: 0;
+    padding: 25px;
+    /* display: flex; */
+    /* align-items: flex-end; */
+    /* justify-content: center; */
+    color: blue;
+    font-size: 1.5rem;
 }
-
-.section-petal {
-    background-color: #EBCFCF;
-}
-
-.section-sage {
-    background-color: #B8BFA0;
-}
-
-footer {
-    background-color: #14211C;
-    color: #F7EEE9;
-    padding: 2rem;
-}
-
-footer a {
-    color: #D9A5A8;
-    font-size: 50px;
-}
-
-/* ----------FOOTER---------- */
-
-footer a:hover {
-    color: #F7EEE9;
-}
-
-
-
-
-/* #F7EEE9 - blush cream */
-/* #1F4D3F - deep emerald*/
-/* #14211C - ink green */
-/* #D9A5A8 - dusty pink*/
-/* #B8BFA0 - sage mist*/
-/* #EBCFCF - pale petal*/

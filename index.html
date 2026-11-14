@@ -12,28 +12,41 @@
     <header class="header">
         <nav class="nav">
             <ul>
-                <li>first one</li>
-                <li>Gallery</li>
-                <li><a class="contact" href="https://linkedin.com">Contact</a></li>
+                <!-- <li>first one</li> -->
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><button class="contact" id="open-contact">Let's Connect</button></li>
             </ul>
         </nav>
-        <p class="hero-text">Welcome to my website!</p>
+        <p class="hero-text">Time to meet your maker.</p>
     </header>
-    <main>
-        <div class="blob-container">
+    <main class="body">
+        <div class="blob-1">
             <p>The first section where I describe what I want to be on my website.</p>
             <p>I think this will go in the same blob.</p>
         </div>
-        <div class="blob-container">
+        <div class="blob-2">
             This seems to be another blob, but I am not using a P tag
         </div>
-        <div class="blob-container">
+        <div class="blob-3">
             I imagine I'll use flexbox to arrange these where I want them to be on the screen.
         </div>
     </main>
     <footer class="footer">
         <p class="footer-text">I always do good shit.</p>
     </footer>
+
+    <dialog class="contact-box" id="contact-box">
+        <button id="close-contact" class="close-x" aria-label="Close">&times;</button>
+        <div>Find me on LinkedIn or email me </div>
+        <!-- <h2>Get in touch</h2> -->
+        <div><a href="https://linkedin.com/in/annabelle-geldmacher" target="_blank" rel="noopener">LinkedIn</a></div>
+        <div>
+            <!-- <span id="email-text">annabelle.geldmacher@gmail.com</span> -->
+            <a href="mailto:annabelle.geldmacher@gmail.com">Email Me</a>
+            <!-- <button class="copy-email" id="copy-email">Copy email</button> -->
+        </div>
+    </dialog>
+    <script src="script.js"></script>
 </body>
 
 </html>

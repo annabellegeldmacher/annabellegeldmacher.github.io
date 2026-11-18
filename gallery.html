@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <p>hello, world</p>
-    
+    <header class="gallery-header">
+        <nav class="nav">
+            <ul>
+                <li><a class="nav" href="index.html">Home</a></li>
+                <li><a class="nav" href="gallery.html">Gallery</a></li>
+                <li><button class="contact" id="open-contact">Let's Connect</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <dialog class="contact-box" id="contact-box">
+        <button id="close-contact" class="close-x" aria-label="Close">&times;</button>
+        <!-- <div>Find me on LinkedIn or email me</div> -->
+        <!-- <h2>Get in touch</h2> -->
+        <div><a href="https://linkedin.com/in/annabelle-geldmacher" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div>
+            <!-- <span id="email-text">annabelle.geldmacher@gmail.com</span> -->
+            <a href="mailto:annabelle.geldmacher@gmail.com">Email Me</a>
+            <!-- <button class="copy-email" id="copy-email">Copy email</button> -->
+        </div>
+    </dialog>
+
+    <main class="gallery-main">
+        <figure class="polaroid">
+            <img src="photos/thistlesunset.jpg" alt="highland sunset">
+            <figcaption>Highland sunset</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/thistlesunset.jpg" alt="highland sunset">
+            <figcaption>Highland sunset</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/thistlesunset.jpg" alt="highland sunset">
+            <figcaption>Highland sunset</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/thistlesunset.jpg" alt="highland sunset">
+            <figcaption>Highland sunset</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/thistlesunset.jpg" alt="highland sunset">
+            <figcaption>Highland sunset</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/thistlesunset.jpg" alt="highland sunset">
+            <figcaption>Highland sunset</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/thistlesunset.jpg" alt="highland sunset">
+            <figcaption>Highland sunset</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/thistlesunset.jpg" alt="highland sunset">
+            <figcaption>Highland sunset</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/thistlesunset.jpg" alt="highland sunset">
+            <figcaption>Highland sunset</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/thistlesunset.jpg" alt="highland sunset">
+            <figcaption>Highland sunset</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/thistlesunset.jpg" alt="highland sunset">
+            <figcaption>Highland sunset</figcaption>
+        </figure>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">I always do good shit.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

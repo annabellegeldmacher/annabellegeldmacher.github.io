@@ -13,6 +13,16 @@
     src: url(fonts/BebasNeue.ttf);
 }
 
+@font-face {
+    font-family: CourierPrime;
+    src: url(fonts/CourierPrime.ttf)
+}
+
+@font-face {
+    font-family: SpecialElite;
+    src: url(fonts/SpecialElite.ttf);
+}
+
 @media (min-width: 700px) {
     .blob-1 {
         align-self: flex-start;
@@ -132,7 +142,7 @@ body {
     font-size: x-large;
     display: flex;
     color: #fbeaee;
-    text-shadow: 3px 5px 14px rgba(0, 0, 0, .55);
+    text-shadow: 2px 4px 12px rgba(0, 0, 0, .55);
     text-decoration: none;
     flex-direction: row;
     justify-content: space-evenly;
@@ -161,6 +171,7 @@ body {
     border: none;
     font: inherit;
     cursor: pointer;
+    padding: 0;
     /* cursor/pointer - why? */
 }
 
@@ -169,17 +180,26 @@ body {
 
 }
 
+.gallery-header .nav a:hover,
+.gallery-header .contact:hover {
+    color: #1f3d2f;
+    text-shadow: none;
+}
+
 .contact-box {
     background-color: #1f3d2f;
-    color: #EBCFCF;
+    color: #d9959f;
     width: min(70vw, 60vh);
     /* max-width: 70vw, 65vh; */
     height: min(80vw, 60vh);
     box-sizing: border-box;
     border: none;
     border-radius: 1rem;
-    font-family: "BebasNeue";
-    font-size: clamp(1.25rem, 6vmin, 2rem);
+    font-family: "ElliotSix";
+    /* margin: 0; */
+    line-height: 1.2;
+    font-size: clamp(1.5rem, 6vmin, 2rem);
+    letter-spacing: .02em;
     padding: clamp(1rem, 4vmin, 2rem);
     overflow-wrap: break-word;
     overflow: auto;
@@ -194,12 +214,17 @@ body {
     text-align: center;
 }
 
+.contact-box p {
+    font-size: 1.2em;
+}
+
 .contact-box a {
+    font-family: "BebasNeue";
     color: #EBCFCF;
 }
 
 .contact-box a:hover {
-    color: #1f3d2f;
+    color: #d9959f;
 }
 
 .contact-box::backdrop {
@@ -218,11 +243,11 @@ body {
     size: clamp(1.75rem, 6vmin, 3rem);
     line-height: 1;
     cursor: pointer;
-    color: #e9a9b8;
+    color: #EBCFCF;
 }
 
 .close-x:hover {
-    color: #a8c99a;
+    color: #d9959f;
 }
 
 .hero-text {
@@ -328,6 +353,41 @@ body {
     text-align: center;
     color: #fbeaee;
     font-family: "BebasNeue";
+}
+
+@media (max-width: 699px) {
+    .home-main {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .nav ul {
+        font-size: clamp(1.1rem, 5vw, 1.5rem);
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .nav a,
+    .contact {
+        display: inline-block;
+        padding: 0.5rem 0.4rem;
+        line-height: 1;
+    }
+}
+
+.blob-1,
+.blob-2,
+.blob-3,
+.blob-4,
+.blob-5 {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    margin-top: 0;
+    padding: 1.5rem;
+    width: auto;
+    max-width: none;
 }
 
 .body {
@@ -445,7 +505,6 @@ body::after {
     /* align-items: flex-end; */
     /* justify-content: center; */
     color: #1f3d2f;
-
     font-size: 1.5rem;
 }
 

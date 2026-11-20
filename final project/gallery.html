@@ -1,12 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <p>hello, world</p>
-    
+    <header class="gallery-header">
+        <nav class="nav">
+            <ul>
+                <li><a class="nav" href="index.html">Home</a></li>
+                <li><a class="nav" href="gallery.html">Gallery</a></li>
+                <li><button class="contact" id="open-contact">Let's Connect</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <dialog class="contact-box" id="contact-box">
+        <button id="close-contact" class="close-x" aria-label="Close">&times;</button>
+        <!-- <div>Find me on LinkedIn or email me</div> -->
+        <!-- <h2>Get in touch</h2> -->
+        <div>
+            <p>I love to get<br>fan mail,<br>come find me!</p>
+        </div>
+        <div><a href="https://linkedin.com/in/annabelle-geldmacher" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div>
+            <!-- <span id="email-text">annabelle.geldmacher@gmail.com</span> -->
+            <a href="mailto:annabelle.geldmacher@gmail.com">email me</a>
+            <!-- <button class="copy-email" id="copy-email">Copy email</button> -->
+        </div>
+    </dialog>
+
+    <main class="gallery-main">
+        <figure class="polaroid">
+            <img src="photos/meVegas.jpeg" alt="49ers crop tee">
+            <figcaption>August 2025</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/NinersBrown.jpeg" alt="brown niners sweatshirt">
+            <figcaption>February 2026</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/Ravens2.jpeg" alt="ravens sweatshirt">
+            <figcaption>December 2025</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/BlueyBag.jpeg" alt="bluey bag">
+            <figcaption>July 2026</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/LewisQuilt.jpeg" alt="multicolored quilt">
+            <figcaption>2016</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/PoppyQuilt.jpeg" alt="pink triangle quilt">
+            <figcaption>2015</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/TaftQuilt.jpeg" alt="blue square quilt">
+            <figcaption>2018</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/MarioHalloween.jpeg" alt="marios bros halloween">
+            <figcaption>2022</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/PokemonHalloween.jpeg" alt="pokemon halloween">
+            <figcaption>2024</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/ReginaldHalloween.jpeg" alt="dog halloween">
+            <figcaption>2025</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/RumiHalloween.jpeg" alt="kids halloween">
+            <figcaption>2025</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/BaptismCookies.jpeg" alt="baptism cookies">
+            <figcaption>February 2017</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/HalloweenCookies.jpeg" alt="halloween cookies">
+            <figcaption>October 2016</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/SweaterCookies.jpeg" alt="sweater cookies">
+            <figcaption>December 2016</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/LewisCake.jpeg" alt="first birthday cake">
+            <figcaption>May 2022</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/MinecraftCake.jpeg" alt="minecraft cake">
+            <figcaption>September 2022</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/PickleCake.jpeg" alt="pickle cake">
+            <figcaption>July 2026</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/UnicornCake.jpeg" alt="unicorn cake">
+            <figcaption>July 2021</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/WickedCake.jpeg" alt="wicked cake">
+            <figcaption>July 2025</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/PokemonCake.jpeg" alt="pokemon cake">
+            <figcaption>September 2024</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/ChristmasNails.jpeg" alt="christmas nails">
+            <figcaption>December 2025</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/NinersNails.jpeg" alt="niners nails">
+            <figcaption>September 2025</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/PoppyNails.jpeg" alt="poppy nails">
+            <figcaption>July 2026</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/RetroNails.jpeg" alt="retro nails">
+            <figcaption>August 2026</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/ValentinesNails.jpeg" alt="valentines nails">
+            <figcaption>February 2026</figcaption>
+        </figure>
+        <figure class="polaroid">
+            <img src="photos/WildCardNails.jpeg" alt="football nails">
+            <figcaption>January 2026</figcaption>
+        </figure>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">I always do good shit.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
